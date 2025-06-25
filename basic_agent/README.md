@@ -1,6 +1,11 @@
 # Basic Agent
 Building a complete agentic AI system using only free, local models (GPT-2). Faced with the constraint of not having access to powerful models like GPT-4, I implemented the fundamental logic patterns manually that sophisticated models handle automatically - revealing how tool integration, memory persistence, and state management actually work under the hood.
 
+Building with GPT-2 forced understanding of patterns that powerful models hide:
+- How "intelligent" behavior actually works (sophisticated pattern matching)
+- Where framework capabilities end and model intelligence begins
+- Why model quality matters exponentially for production systems
+
 ### Table of Contents
 * [Tool Integration](#tool-integration)
 * [Building Agentic Workflows](#building-agentic-workflows)
@@ -163,7 +168,8 @@ For instance:
         config={"configurable": {"thread_id": "admin_session"}}
     )
 
-We can think of StateGraph as a memory management tool and MemorySaver as a partioned dictionary.
+We can think of StateGraph as a memory management tool (active processing, workflow logic, live state management) and MemorySaver as a database (partioned dictionary, passive storage and retrieval).
+
 
 **StateGraph:**
 
