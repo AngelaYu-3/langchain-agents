@@ -1,2 +1,2 @@
 # langchain-agents
-building agents with langchain!
+building agents with langgraph!
