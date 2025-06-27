@@ -1,5 +1,29 @@
 # [LangGraph Documentation Notes](https://langchain-ai.github.io/langgraph/)
 
+### [Building a Basic Chatbot](https://langchain-ai.github.io/langgraph/tutorials/get-started/1-build-basic-chatbot/)
+
+StateGraph:
+- defines the structure of the chatbot as a "state machine". Nodes are added to represent the LLM and functions the chatbot can call and edges to specify how the bot transitions between these functions.
+- Each node can handle two key tasks--receive the current State as input and output an update to the state, updates to messages will be appended to the existing list
+
+Nodes:
+- represent units of work and are typically regular Python functions
+- Node function takes the current State as input and returns a dictionary containing and updated messages list under the key "messages"
+
+Entry Point:
+- tells the graph where to start its work each time it's run
+
+Exit Point:
+- tells the graph where to finish execution
+
+Compile Graph:
+- compile the graph before running it
+
+Visualize / Run the Chatbot:
+- use the display() and stream() to visualize and display outputs
+
+### [Add Tools](https://langchain-ai.github.io/langgraph/tutorials/get-started/2-add-tools/)
+
 ____
 
 # Other Conceptual Notes
